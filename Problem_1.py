@@ -1,3 +1,6 @@
+# Problem number 1
+# Multiples of 3 or 5
+
 def Multiples():
     output=0
     for i in range(1,1000):
@@ -5,3 +8,4 @@ def Multiples():
             output+=i
     return output
 print(Multiples())
+
