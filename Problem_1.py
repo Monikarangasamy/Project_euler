@@ -13,12 +13,13 @@ print(Multiples())
 #method 2 with O(1) time complexity
 
 def sum_of_multiples_optimized():
-    limit=1000
+    value=1000
     def sum(k):
-        p = (limit - 1) // k
-        return k * p * (p + 1) // 2
+        n = (value - 1) // k
+        return k * n * (n + 1) // 2
     return sum(3) + sum(5) - sum(15)
 
 print(sum_of_multiples_optimized())
+
 
 
