@@ -24,10 +24,11 @@ def sieve(n):
             for i in range(p * p, n + 1, p):
                 prime[i] = False
         p += 1
-    total=0
+    total = 0
     for p in range(2, n + 1):
         if prime[p]:
            total += p
-    
     return total
+  
 print(sieve(2000000))
+
